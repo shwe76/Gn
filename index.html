@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🌙 Good Night ခလေးလေး 🤍</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    overflow:hidden;
+    font-family:Arial,"Myanmar Text",sans-serif;
+
+    background:
+    radial-gradient(circle at 50% 5%,
+    #5d5b9c 0%,
+    #393866 35%,
+    #1b1a38 70%,
+    #080817 100%);
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Moon */
+
+.moon{
+    position:fixed;
+    top:7%;
+    right:12%;
+
+    width:75px;
+    height:75px;
+
+    background:#fff6d5;
+    border-radius:50%;
+
+    box-shadow:
+    0 0 20px #fff6d5,
+    0 0 50px rgba(255,240,180,.5);
+
+    opacity:.95;
+}
+
+/* Stars */
+
+.star{
+    position:fixed;
+    color:#fff;
+    opacity:.8;
+    animation:twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle{
+    from{
+        opacity:.2;
+        transform:scale(.7);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1.2);
+    }
+}
+
+.container{
+    width:94%;
+    max-width:540px;
+
+    text-align:center;
+
+    position:relative;
+    z-index:5;
+
+    padding:15px;
+}
+
+.page{
+    animation:pageIn .7s ease;
+}
+
+.hidden{
+    display:none;
+}
+
+.heart{
+    font-size:52px;
+    margin-bottom:5px;
+
+    animation:heartFloat 2.3s infinite;
+
+    filter:
+    drop-shadow(0 0 15px rgba(255,180,220,.8));
+}
+
+@keyframes heartFloat{
+
+    0%,100%{
+        transform:translateY(0) scale(1);
+    }
+
+    50%{
+        transform:translateY(-8px) scale(1.08);
+    }
+
+}
+
+h1{
+    font-size:clamp(27px,8vw,42px);
+
+    margin:8px 0 18px;
+
+    color:#fffafc;
+
+    text-shadow:
+    0 0 10px #ffd9ed,
+    0 0 25px #cba6ff,
+    0 0 45px #7d74d8;
+}
+
+h2{
+    font-size:clamp(21px,7vw,31px);
+
+    color:#fff8fc;
+
+    margin:8px 0 18px;
+
+    text-shadow:
+    0 0 10px #ffd9ed,
+    0 0 22px #bba8ff;
+}
+
+.message,
+.poem{
+
+    font-family:"Myanmar Text",Arial,sans-serif;
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:#fffafd;
+
+    text-shadow:
+    0 0 8px rgba(220,200,255,.65);
+}
+
+.poem span{
+    display:block;
+    margin:5px 0;
+}
+
+.highlight{
+    color:#ffe0ef;
+    font-weight:bold;
+}
+
+button{
+
+    margin-top:17px;
+
+    padding:12px 27px;
+
+    border:0;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(135deg,
+    #8378dc,
+    #bd82c7);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 0 18px rgba(150,130,230,.75),
+    0 0 35px rgba(190,120,210,.35);
+
+    cursor:pointer;
+}
+
+button:active{
+    transform:scale(.94);
+}
+
+/* Floating hearts */
+
+.floating{
+
+    position:absolute;
+
+    bottom:-60px;
+
+    pointer-events:none;
+
+    animation:floatUp linear forwards;
+
+    opacity:.8;
+
+    z-index:1;
+}
+
+@keyframes floatUp{
+
+    0%{
+        transform:
+        translateY(0)
+        rotate(0);
+
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+        translateY(-115vh)
+        rotate(360deg);
+
+        opacity:0;
+    }
+}
+
+@keyframes pageIn{
+
+    from{
+        opacity:0;
+        transform:
+        translateY(25px)
+        scale(.97);
+    }
+
+    to{
+        opacity:1;
+        transform:
+        translateY(0)
+        scale(1);
+    }
+
+}
+
+@media(max-width:380px){
+
+    .container{
+        padding:8px;
+    }
+
+    .heart{
+        font-size:45px;
+    }
+
+    .message,
+    .poem{
+        font-size:16px;
+        line-height:1.85;
+    }
+
+    button{
+        font-size:14px;
+        padding:10px 22px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- MOON -->
+
+<div class="moon"></div>
+
+
+<!-- STARS -->
+
+<div class="star" style="top:12%;left:15%;">✦</div>
+<div class="star" style="top:23%;left:30%;">✧</div>
+<div class="star" style="top:17%;left:70%;">✦</div>
+<div class="star" style="top:34%;left:86%;">✧</div>
+<div class="star" style="top:55%;left:8%;">✦</div>
+<div class="star" style="top:70%;left:91%;">✧</div>
+
+
+<div class="container">
+
+
+<!-- PAGE 1 -->
+
+<div id="page1" class="page">
+
+<div class="heart">🌙🤍🌸</div>
+
+<h1>Good Night ခလေးလေး 🌙</h1>
+
+<div class="message">
+
+ညနက်လာပြီ ခလေးလေးရေ… 🤍<br><br>
+
+ဒီနေ့တစ်နေ့လုံး ပင်ပန်းခဲ့ရသမျှကို<br>
+ဒီညလေးမှာ ခဏမေ့ထားလိုက်နော်။ 🌙<br><br>
+
+မျက်လုံးလေးမှိတ်ပြီး<br>
+စိတ်လေးကို အေးအေးဆေးဆေးထား၊<br>
+နွေးနွေးထွေးထွေး အိပ်ပျော်ပါနော်… 🌸<br><br>
+
+ဒီညလေးက<br>
+ခလေးလေးအတွက် အေးချမ်းတဲ့ညလေး<br>
+ဖြစ်ပါစေ။ 🤍
+
+</div>
+
+<button onclick="nextPage(2)">
+🌙 ချော့သိပ်စာလေး
+</button>
+
+</div>
+
+
+<!-- PAGE 2 -->
+
+<div id="page2" class="page hidden">
+
+<div class="heart">🥺🌙🤍</div>
+
+<h2>🌸 ခလေးလေး အိပ်တော့နော်</h2>
+
+<div class="message">
+
+ခလေးလေးရေ…<br><br>
+
+ဒီနေ့ ဘယ်လောက်ပင်ပန်းခဲ့လဲ<br>
+ကိုကိုမသိနိုင်ပေမယ့်<br>
+အခုတော့ အားလုံးကို ခဏထားခဲ့နော်။ 🤍<br><br>
+
+ဖုန်းလေးလည်း ခဏချထား၊<br>
+မျက်လုံးလေးမှိတ်ထားပြီး<br>
+စိတ်လေးကို အေးအေးဆေးဆေးထားပါ။ 🌙<br><br>
+
+ဘာအကြောင်းမှ မတွေးနဲ့တော့၊<br>
+မနက်ဖြန်မှ ဖြည်းဖြည်းစဉ်းစားကြမယ်။<br><br>
+
+ဒီညမှာတော့<br>
+ခလေးလေးကောင်းကောင်းအိပ်ဖို့ပဲ<br>
+ကိုကို ဆုတောင်းပေးနေတယ်။ 🌸<br><br>
+
+<span class="highlight">
+ပင်ပန်းခဲ့သမျှတွေ အိပ်ပျော်သွားတဲ့အခါ<br>
+စိတ်အေးချမ်းမှုလေးတွေနဲ့ ပြန်နိုးလာပါစေ။ 🤍
+</span>
+
+</div>
+
+<button onclick="nextPage(3)">
+🌷 ခလေးအတွက် ကဗျာ
+</button>
+
+</div>
+
+
+<!-- PAGE 3 -->
+
+<div id="page3" class="page hidden">
+
+<div class="heart">🌙🌸🥺</div>
+
+<h2>💗 ခလေးလေးကို လွမ်းတဲ့ည</h2>
+
+<div class="poem">
+
+<span>ညကောင်းကင်ထဲ လမင်းလေးရှိသလို 🌙</span>
+<span>ကိုကို့ရင်ထဲမှာ ခလေးလေးရှိတယ်။</span>
+
+<span>ကြယ်လေးတွေ တောက်ပနေသလို ✨</span>
+<span>ခလေးအပြုံးလေးက ရင်ထဲတောက်ပတယ်။</span>
+
+<span>ညနက်လာလေလေ</span>
+<span>အလွမ်းက ပိုနက်လာတယ်၊</span>
+
+<span>တိတ်ဆိတ်လာလေလေ</span>
+<span>ခလေးရဲ့အသံလေးကို ပိုသတိရလာတယ်။ 🥺</span>
+
+<span>မတွေ့ရတဲ့အချိန်တွေမှာ</span>
+<span>စိတ်က ခလေးဆီပဲ ရောက်နေတယ်၊</span>
+
+<span>မပြောဖြစ်တဲ့အချိန်တွေမှာ</span>
+<span>ခလေးနဲ့ပြောချင်တဲ့စကားတွေ ပိုများလာတယ်။ 🤍</span>
+
+<span>အချိန်တွေကြာလာလေလေ</span>
+<span>အရင်ကထက်ပိုပြီး ချစ်မိလာတယ်၊</span>
+
+<span>နေ့ရက်တွေရွေ့လာလေလေ</span>
+<span>ခလေးလေးကို ပိုပြီး တန်ဖိုးထားမိလာတယ်။ 🌷</span>
+
+<span>ဒီညလေးမှာတော့</span>
+<span>ခလေးလေး အေးအေးချမ်းချမ်းအိပ်ပါ၊</span>
+
+<span>ကိုကို့ရဲ့ အလွမ်းလေးတွေကို</span>
+<span>အိပ်မက်လှလှလေးတွေအဖြစ် ပြောင်းပေးလိုက်မယ်။ 🌙🤍</span>
+
+</div>
+
+<button onclick="nextPage(4)">
+🙏 ဆုတောင်းလေး
+</button>
+
+</div>
+
+
+<!-- PAGE 4 -->
+
+<div id="page4" class="page hidden">
+
+<div class="heart">🙏🌙🤍</div>
+
+<h2>🌸 ခလေးလေးအတွက် ဆုတောင်း</h2>
+
+<div class="poem">
+
+<span>ဒီညလေးမှာ ခလေးလေး</span>
+<span>စိတ်ချမ်းသာစွာ အိပ်ပျော်ပါစေ။ 🤍</span>
+
+<span>ပင်ပန်းမှုတွေအားလုံး</span>
+<span>အိပ်မက်ထဲမှာပဲ ကျန်ခဲ့ပါစေ။ 🌙</span>
+
+<span>စိတ်ညစ်စရာတွေ ကင်းဝေးပြီး</span>
+<span>အပြုံးလေးတွေနဲ့ နိုးထလာပါစေ။ 🌸</span>
+
+<span>ကျန်းမာရေးကောင်းပါစေ၊</span>
+<span>အလုပ်အကိုင်တွေလည်း အဆင်ပြေပါစေ။ 🤍</span>
+
+<span>သွားတဲ့လမ်းတိုင်းမှာ</span>
+<span>ကောင်းခြင်းတွေနဲ့ တွေ့ပါစေ၊</span>
+
+<span>ကြုံလာသမျှအခက်အခဲတွေကိုလည်း</span>
+<span>အေးအေးဆေးဆေး ကျော်ဖြတ်နိုင်ပါစေ။ 🌷</span>
+
+<span>မနက်ဖြန်နိုးလာတဲ့အခါ</span>
+<span>ဒီနေ့ထက် ပိုပျော်ရွှင်နိုင်ပါစေ။ ✨</span>
+
+</div>
+
+<button onclick="nextPage(5)">
+💗 နောက်ဆုံးစာ
+</button>
+
+</div>
+
+
+<!-- PAGE 5 -->
+
+<div id="page5" class="page hidden">
+
+<div class="heart">💗🌙🌸</div>
+
+<h1>ခလေးလေးရေ… 🤍</h1>
+
+<div class="message">
+
+တစ်ခါတလေ ကိုကိုက<br>
+စကားလုံးတွေနဲ့ မပြောတတ်ပေမယ့်<br>
+ရင်ထဲမှာတော့ ခလေးလေးကို<br>
+အမြဲသတိရနေတယ်။ 🥺<br><br>
+
+အချိန်တွေကြာလာတာနဲ့အမျှ<br>
+အရင်ကထက်ပိုပြီး ချစ်မိလာတယ်၊<br>
+အရင်ကထက်ပိုပြီး တန်ဖိုးထားမိလာတယ်၊<br>
+အရင်ကထက်ပိုပြီး လွမ်းမိလာတယ်။ 🤍<br><br>
+
+ခလေးလေးရဲ့ အပြုံးလေးက<br>
+ကိုကို့အတွက် နွေးထွေးမှု၊<br>
+ခလေးလေးရဲ့ စကားလေးတွေက<br>
+ကိုကို့အတွက် အေးချမ်းမှုပါ။ 🌸<br><br>
+
+ဒါကြောင့် ဒီညလေးမှာ<br>
+ဘာမှမတွေးဘဲ အေးအေးချမ်းချမ်းအိပ်နော်။<br><br>
+
+<b>
+Good Night ပါ ခလေးလေး… 🌙🤍<br><br>
+
+အိပ်မက်လှလှလေးတွေ မက်ပါစေ၊<br>
+မနက်နိုးလာတဲ့အခါ<br>
+အပြုံးလေးနဲ့ နိုးလာပါစေ။ 🌷<br><br>
+
+ပြီးတော့…<br>
+
+အရင်ကထက်ပိုချစ်မိလာတဲ့<br>
+ကိုကို့ရဲ့ ခလေးလေးကို<br>
+ဒီညလေးမှာလည်း အရမ်းသတိရနေတယ်။ 🥺💗
+</b>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* Floating emojis */
+
+function createFloating(){
+
+    const item =
+        document.createElement("div");
+
+    item.className="floating";
+
+    const emojis=[
+        "🌙",
+        "🤍",
+        "💗",
+        "🌸",
+        "🌷",
+        "✨",
+        "⭐",
+        "🦋",
+        "💕",
+        "🌹"
+    ];
+
+    item.innerHTML =
+        emojis[
+            Math.floor(
+                Math.random()*emojis.length
+            )
+        ];
+
+    item.style.left =
+        Math.random()*100+"vw";
+
+    item.style.fontSize =
+        (15+Math.random()*25)+"px";
+
+    item.style.animationDuration =
+        (6+Math.random()*7)+"s";
+
+    document.body.appendChild(item);
+
+    setTimeout(()=>{
+        item.remove();
+    },13000);
+
+}
+
+setInterval(createFloating,550);
+
+
+/* Page navigation */
+
+function nextPage(pageNumber){
+
+    document
+    .querySelectorAll(".page")
+    .forEach(page=>{
+        page.classList.add("hidden");
+    });
+
+    const next =
+        document.getElementById(
+            "page"+pageNumber
+        );
+
+    if(next){
+
+        next.classList.remove("hidden");
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
